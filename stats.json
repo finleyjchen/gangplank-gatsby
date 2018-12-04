@@ -1,0 +1,52 @@
+{
+  "assetsByChunkName": {
+    "path---blog-what-gangplank-gg-is-about": [
+      "path---blog-what-gangplank-gg-is-about-850a61dff30956fdb3ea.js",
+      "path---blog-what-gangplank-gg-is-about-850a61dff30956fdb3ea.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-8cc64a86adfc52059b49.js",
+      "component---src-pages-index-js-8cc64a86adfc52059b49.js.map"
+    ],
+    "path---blog": [
+      "path---blog-97b8856e09f1cd363c04.js",
+      "path---blog-97b8856e09f1cd363c04.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-65fb803d2e3f9f8f0d4f.js",
+      "component---src-templates-blog-post-js-65fb803d2e3f9f8f0d4f.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-e4b7ae87b5bc9afa4fc2.js",
+      "component---src-layouts-index-js-e4b7ae87b5bc9afa4fc2.js.map"
+    ],
+    "path---index": [
+      "path---index-bb8372f13ccc98b545f8.js",
+      "path---index-bb8372f13ccc98b545f8.js.map"
+    ],
+    "path---blog-test-post": [
+      "path---blog-test-post-46769da23c6ead7f0e8e.js",
+      "path---blog-test-post-46769da23c6ead7f0e8e.js.map"
+    ],
+    "commons": [
+      "commons-2e1f7cc7ff0519f75281.js",
+      "build-js-styles.css",
+      "commons-2e1f7cc7ff0519f75281.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-blog-js": [
+      "component---src-pages-blog-js-ccaec0685002fc45b3c3.js",
+      "component---src-pages-blog-js-ccaec0685002fc45b3c3.js.map"
+    ],
+    "app": [
+      "app-db550706fb091a1813fb.js",
+      "build-js-styles.css",
+      "app-db550706fb091a1813fb.js.map",
+      "build-js-styles.css.map"
+    ]
+  }
+}
