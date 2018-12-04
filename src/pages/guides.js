@@ -4,23 +4,23 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
 import ArticlePreview from '../components/article-preview'
-
-class BlogIndex extends React.Component {
+import GuidePreview from '../components/guide-preview'
+class GuideIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+    const posts = get(this, 'props.data.allContentfulGuide.edges')
 
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
 
         <div className="wrapper">
-          <h2 className="section-headline">Articles</h2>
+          <h2 className="section-headline">Guides</h2>
           <ul className="article-list">
             {posts.map(({ node }) => {
               return (
                 <li key={node.slug}>
-                  <ArticlePreview article={node} />
+                  <GuidePreview guide={node} />
                 </li>
               )
             })}
@@ -31,17 +31,17 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default GuideIndex
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+  query GuideIndexQuery {
+    allContentfulGuide(sort: { fields: [publishDate], order: DESC }) {
       edges {
         node {
           title
           slug
           publishDate(formatString: "MMMM Do, YYYY")
-          lastUpdated(formatString: "MMMM Do, YYYY")
+          
           heroImage {
             sizes(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
               ...GatsbyContentfulSizes_tracedSVG

@@ -6,11 +6,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
+    const guidePost = path.resolve('./src/templates/guide-post.js')
     resolve(
       graphql(
         `
           {
             allContentfulBlogPost {
+              edges {
+                node {
+                  title
+                  slug
+                }
+              }
+            }
+            allContentfulGuide{
               edges {
                 node {
                   title
@@ -36,7 +45,18 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             },
           })
         })
+        const guides = result.data.allContentfulGuide.edges
+        guides.forEach((post, index) => {
+          createPage({
+            path: `/guides/${post.node.slug}/`,
+            component: guidePost,
+            context: {
+              slug: post.node.slug
+            },
+          })
+        })
       })
     )
   })
+
 }
