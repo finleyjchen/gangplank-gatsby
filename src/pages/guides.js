@@ -13,8 +13,7 @@ class GuideIndex extends React.Component {
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
-        <div className="heroSection">
-        </div>
+
         <div className="wrapper">
           <h2 className="section-headline">Guides</h2>
           <ul className="article-list">
