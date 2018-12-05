@@ -8,7 +8,7 @@ class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const [author] = get(this, 'props.data.allContentfulPerson.edges')
+    const [author] = get(this, 'props.data.allContentfulPage.edges')
 
     return (
       <div style={{ background: '#fff' }}>
@@ -43,7 +43,7 @@ export const pageQuery = graphql`
           publishDate(formatString: "MMMM Do, YYYY")
           
           heroImage {
-            sizes(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
+            sizes(maxWidth: 500, maxHeight: 250, resizingBehavior: SCALE) {
              ...GatsbyContentfulSizes_tracedSVG
             }
           }
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c3MCdQl5FmoKQi26mqKaKgq" } }) {
+    allContentfulPage(filter: { name: { eq: "Welcome" } }) {
       edges {
         node {
           name
@@ -66,8 +66,7 @@ export const pageQuery = graphql`
           heroImage: image {
             sizes(
               maxWidth: 1180
-              maxHeight: 480
-              resizingBehavior: PAD
+
               background: "rgb:000000"
             ) {
               ...GatsbyContentfulSizes_tracedSVG

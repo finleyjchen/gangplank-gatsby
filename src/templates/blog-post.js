@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
             }}
           >
             {post.publishDate} (Last updated: {post.lastUpdated})
-            
+
           </p>
           <div
             dangerouslySetInnerHTML={{
@@ -41,7 +41,7 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    contentfulGuide(slug: { eq: $slug }) {
+    contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
       heroImage {
