@@ -6,7 +6,7 @@ export default () => (
   <nav role="navigation">
     <ul className={styles.navigation}>
       <li className={styles.logo}>
-        <Link to="/">gangplank.gg</Link>
+        <Link to="/">Bilgewater.net</Link>
       </li>
       <li className={styles.navigationItem}>
         <Link to="/blog/">Articles</Link>

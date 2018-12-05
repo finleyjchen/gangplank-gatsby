@@ -20,13 +20,13 @@ h3, h4,h5 {
   font-weight: normal;
   font-family: "Habibi", serif;
 }
-h1 { font-size: 2.2em;}
+h1 { font-size: 2em;}
 h2 {
-  font-size:2em;
+  font-size:1.8em;
 }
 
 h3 {
-  font-size:1.8em;
+  font-size:1.6em;
 }
 
 a {
@@ -55,8 +55,8 @@ a {
  *
  */
 .section-headline {
-  padding: 0 0 0.4em 0;
-  margin: 0 0 5vmin 0;
+  padding: 0 0 0.2em 0;
+  margin: 0 0 2vmin 0;
   border-bottom: 1px solid #ddd;
 }
 
