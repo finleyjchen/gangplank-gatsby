@@ -1,52 +1,76 @@
 {
   "assetsByChunkName": {
+    "path---best-pirates": [
+      "path---best-pirates-cf17148b42d8ab124603.js",
+      "path---best-pirates-cf17148b42d8ab124603.js.map"
+    ],
     "path---blog-what-gangplank-gg-is-about": [
       "path---blog-what-gangplank-gg-is-about-850a61dff30956fdb3ea.js",
       "path---blog-what-gangplank-gg-is-about-850a61dff30956fdb3ea.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-8cc64a86adfc52059b49.js",
-      "component---src-pages-index-js-8cc64a86adfc52059b49.js.map"
+      "component---src-pages-index-js-9f7e7e7c8ca67dd1c94b.js",
+      "component---src-pages-index-js-9f7e7e7c8ca67dd1c94b.js.map"
     ],
     "path---blog": [
-      "path---blog-97b8856e09f1cd363c04.js",
-      "path---blog-97b8856e09f1cd363c04.js.map"
+      "path---blog-cf17148b42d8ab124603.js",
+      "path---blog-cf17148b42d8ab124603.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "component---src-pages-guides-js": [
+      "component---src-pages-guides-js-ebf647aceb0e66ada063.js",
+      "component---src-pages-guides-js-ebf647aceb0e66ada063.js.map"
+    ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-65fb803d2e3f9f8f0d4f.js",
-      "component---src-templates-blog-post-js-65fb803d2e3f9f8f0d4f.js.map"
+      "component---src-templates-blog-post-js-74792ee395da1c1e8ebe.js",
+      "component---src-templates-blog-post-js-74792ee395da1c1e8ebe.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e4b7ae87b5bc9afa4fc2.js",
-      "component---src-layouts-index-js-e4b7ae87b5bc9afa4fc2.js.map"
+      "component---src-layouts-index-js-792d83b1378f8b6ae538.js",
+      "component---src-layouts-index-js-792d83b1378f8b6ae538.js.map"
+    ],
+    "path---guides": [
+      "path---guides-638a938a54b33007adc7.js",
+      "path---guides-638a938a54b33007adc7.js.map"
     ],
     "path---index": [
-      "path---index-bb8372f13ccc98b545f8.js",
-      "path---index-bb8372f13ccc98b545f8.js.map"
+      "path---index-bc2a6ff1785ed8e9b382.js",
+      "path---index-bc2a6ff1785ed8e9b382.js.map"
     ],
     "path---blog-test-post": [
       "path---blog-test-post-46769da23c6ead7f0e8e.js",
       "path---blog-test-post-46769da23c6ead7f0e8e.js.map"
     ],
+    "component---src-pages-best-pirates-js": [
+      "component---src-pages-best-pirates-js-1d4bca0609cd3f6a451b.js",
+      "component---src-pages-best-pirates-js-1d4bca0609cd3f6a451b.js.map"
+    ],
     "commons": [
-      "commons-2e1f7cc7ff0519f75281.js",
+      "commons-aab9b8e08e1f9ba78a70.js",
       "build-js-styles.css",
-      "commons-2e1f7cc7ff0519f75281.js.map",
+      "commons-aab9b8e08e1f9ba78a70.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-blog-js": [
-      "component---src-pages-blog-js-ccaec0685002fc45b3c3.js",
-      "component---src-pages-blog-js-ccaec0685002fc45b3c3.js.map"
+      "component---src-pages-blog-js-618015439e4bc35d39ca.js",
+      "component---src-pages-blog-js-618015439e4bc35d39ca.js.map"
     ],
     "app": [
-      "app-db550706fb091a1813fb.js",
+      "app-9ed8725103a32b8a30cd.js",
       "build-js-styles.css",
-      "app-db550706fb091a1813fb.js.map",
+      "app-9ed8725103a32b8a30cd.js.map",
       "build-js-styles.css.map"
+    ],
+    "component---src-templates-guide-post-js": [
+      "component---src-templates-guide-post-js-b15eedcd87f1e19a4bf7.js",
+      "component---src-templates-guide-post-js-b15eedcd87f1e19a4bf7.js.map"
+    ],
+    "path---guides-8-24-gangplank-guide": [
+      "path---guides-8-24-gangplank-guide-0fc4cd06b676f44c389b.js",
+      "path---guides-8-24-gangplank-guide-0fc4cd06b676f44c389b.js.map"
     ]
   }
 }
