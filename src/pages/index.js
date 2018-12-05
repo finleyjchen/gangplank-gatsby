@@ -55,7 +55,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPage(filter: { name: { eq: "Welcome" } }) {
+    allContentfulPage(filter: { id: { eq: "c2vlTczTa9aMgyWg8aya8sM" } }) {
       edges {
         node {
           name
