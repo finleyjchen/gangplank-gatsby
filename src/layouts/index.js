@@ -8,7 +8,26 @@ import Navigation from '../components/navigation'
 import Footer from '../components/footer'
 
 class Template extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { didMount: false }
+
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ didMount: true })
+    }, 0)
+  }
+
+  componentWillUnmount() {
+    clearTimeout();
+    }
+
+
   render() {
+    const { didMount } = this.state
+
     const { location, children } = this.props
     let header
 
@@ -20,7 +39,10 @@ class Template extends React.Component {
     return (
       <Container>
         <Navigation />
+        <div className={`fade-in ${didMount && 'visible'}`}
+        >
         {children()}
+        </div>
         <Footer />
       </Container>
     )
