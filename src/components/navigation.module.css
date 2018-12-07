@@ -9,6 +9,9 @@
   background-color: #fff;
   color:#333;
   font-family:"Habibi", serif;
+  text-transform: uppercase;
+  font-weight:700;
+  justify-content: space-between;
 }
 .logo {
   display:inline-flex;
@@ -24,6 +27,12 @@
 .logo img {
   max-height: 100px;
 
+}
+
+.navigationItems {
+  display:inline-flex;
+  align-items: center;
+  margin: 0 1em;
 }
 .navigationItem {
   display: inline-flex;
