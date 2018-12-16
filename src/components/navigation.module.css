@@ -42,11 +42,13 @@
 }
 
 .navigationItem a {
-  color: currentColor;
+  color: #33333390;
   text-decoration: none;
   letter-spacing: 0.5px;
 
 }
 .navigationItem a:hover {
   box-shadow: 0 2px 0px 0px rgb(207, 135, 0);
+  color: #333333;
+
 }

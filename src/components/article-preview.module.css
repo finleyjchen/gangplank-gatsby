@@ -18,7 +18,7 @@
 }
 
 .preview:hover {
-  transform:scale(1.01);
+  transform:translateY(-3px);
 }
 
 .tag {
@@ -30,4 +30,10 @@
   border-radius: 2px;
   border: 1px solid #A0A0A0;
   margin-right: .5em;
+}
+
+.meta {
+  display:flex;
+  justify-content: space-between;
+  
 }

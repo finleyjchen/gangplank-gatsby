@@ -46,6 +46,15 @@ export const pageQuery = graphql`
               ...GatsbyContentfulSizes_tracedSVG
             }
           }
+          author {
+          name
+          image {
+            sizes(maxWidth: 600, maxHeight: 300, resizingBehavior: SCALE) {
+             ...GatsbyContentfulSizes_tracedSVG
+            }
+          }
+        }
+        
           description {
             childMarkdownRemark {
               html

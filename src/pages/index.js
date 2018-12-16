@@ -1,9 +1,12 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
-
+import articleImg from '../assets/bilgewater-champs.jpg'
+import guideImg from '../assets/gangplank-bald.jpg'
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -12,18 +15,28 @@ class RootIndex extends React.Component {
 
     return (
       <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
+        <Helmet title={"Bilgewater.net - Gangplank Mains"} />
         <Hero data={author.node} />
         <div className="wrapper">
-          <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">
-            {posts.map(({ node }) => {
-              return (
-                <li key={node.slug}>
-                  <ArticlePreview article={node} />
-                </li>
-              )
-            })}
+            <li className="card">
+              <Link to="/blog">
+                <img alt="articles" src={articleImg} />
+                <h2 className="">Articles</h2>
+              </Link>
+            </li>
+            <li className="card">
+              <Link to="/guides">
+                <img alt="articles" src={guideImg} />
+                <h2 className="">Guides</h2>
+              </Link>
+
+            </li>
+            <li className="card">
+              <img alt="articles" src={articleImg} />
+              <h2 className="">Videos</h2>
+
+            </li>
           </ul>
         </div>
       </div>
@@ -43,9 +56,12 @@ export const pageQuery = graphql`
           publishDate(formatString: "MMMM Do, YYYY")
           
           heroImage {
-            sizes(maxWidth: 500, maxHeight: 250, resizingBehavior: SCALE) {
+            sizes(maxWidth: 600, maxHeight: 300, resizingBehavior: SCALE) {
              ...GatsbyContentfulSizes_tracedSVG
             }
+          }
+          author {
+            name
           }
           description {
             childMarkdownRemark {
